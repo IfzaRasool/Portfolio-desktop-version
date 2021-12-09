@@ -3,7 +3,7 @@
 # Project:
 # Portfolio-Desktop Version
  Responsive Web Template:
-
+<img src="Icons/project-image.png">
 
 #Build with
 
