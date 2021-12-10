@@ -624,12 +624,6 @@ li {
   padding-top: 10px;
 }
 
-.contact-form-divisor {
-  position: static;
-  width: 100%;
-  border: 1px solid #646369;
-}
-
 .social-media-list-end {
   display: flex;
   flex-direction: row;
