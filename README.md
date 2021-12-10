@@ -9,15 +9,15 @@
 
 # Languages :
 
- 1)HTML
- 2)CSS
- 3)Media Queries
+ 1)HTML <br>
+ 2)CSS <br>
+ 3)Media Queries <br>
 
 # Installaion:
-Linters
-npm
-webhint
-stylelintrc
+1) Linters <br>
+2) npm <br>
+3) webhint <br>
+4) stylelintrc <br>
 
  # FrameWork:
  visual studio code/optional
