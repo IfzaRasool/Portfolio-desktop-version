@@ -5,7 +5,7 @@
 .app-wrap {
   position: relative;
   width: 375px;
-  height: 4769px;
+  height: 4700px;
   background: #191765;
 }
 
@@ -630,19 +630,13 @@ li {
   border: 1px solid #646369;
 }
 
-.footer {
-  width: 100%;
-  margin-top: 126%;
-  height: 15%;
-}
-
 .social-media-list-end {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: static;
   width: 250px;
-  height: 40px;
+  height: 12px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -654,7 +648,7 @@ li {
   width: 221px;
   height: 29px;
   left: 76px;
-  top: 777px;
+  top: 37px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -723,10 +717,21 @@ li {
   background-color: cadetblue;
 }
 
+.end-footer {
+  position: absolute;
+  top: 99%;
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .app-wrap {
+    position: absolute;
     width: 100%;
     height: 3860px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .app-header {
@@ -1002,17 +1007,21 @@ li {
     width: 600px;
   }
 
-  .footer {
-    margin-top: 95%;
-  }
-
-  .end-email {
-    padding-left: 40%;
-    padding-top: 10%;
+  hr {
+    width: 100%;
+    border: 1px solid #3a3837;
   }
 
   .social-media-list-end {
-    padding-left: 15%;
+    padding-top: 1%;
+    padding-left: 31%;
+    width: 0;
+    height: 0;
+  }
+
+  .end-footer {
+    position: absolute;
+    top: 98.5%;
   }
 
   .name-field {
@@ -1021,6 +1030,11 @@ li {
     height: 50px;
     left: 0;
     top: calc(37% - 48px / 2);
+  }
+
+  .end-email {
+    top: 31%;
+    padding-left: 44%;
   }
 
   .email-field {
@@ -1037,10 +1051,6 @@ li {
     height: 150px;
     left: 0;
     top: calc(57% - 48px / 2);
-  }
-
-  .contact-form-divisor {
-    width: 100%;
   }
 
   .ellipse {
@@ -1065,10 +1075,10 @@ li {
 
   .ellipse-img3 {
     position: absolute;
-    width: 57.53px;
-    height: 700.92px;
-    left: -132px;
-    top: -149.88px;
+    width: 77.53px;
+    height: 276.92px;
+    left: -38px;
+    top: 23.12px;
     background: #edecff;
     filter: blur(50px);
     transform: rotate(-36.38deg);
