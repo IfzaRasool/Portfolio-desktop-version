@@ -1127,16 +1127,14 @@ li {
       width: 300%;
     }
 
-    75% {
-      font-size: 300%;
-      margin-left: 25%;
-      width: 150%;
-    }
-
     to {
       margin-left: 0%;
       width: 100%;
     }
+  }
+
+  #app-header {
+    transition: all 0.6s ease-out;
   }
 
   .simple-content:hover {
