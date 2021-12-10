@@ -630,12 +630,6 @@ li {
   border: 1px solid #646369;
 }
 
-.footer {
-  width: 100%;
-  margin-top: 126%;
-  height: 15%;
-}
-
 .social-media-list-end {
   display: flex;
   flex-direction: row;
@@ -654,7 +648,7 @@ li {
   width: 221px;
   height: 29px;
   left: 76px;
-  top: 777px;
+  top: 63px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1002,17 +996,18 @@ li {
     width: 600px;
   }
 
-  .footer {
-    margin-top: 95%;
-  }
-
-  .end-email {
-    padding-left: 40%;
-    padding-top: 10%;
+  hr {
+    width: 100%;
   }
 
   .social-media-list-end {
-    padding-left: 15%;
+    padding-left: 31%;
+    width: 0;
+    height: 0;
+  }
+
+  .end-footer {
+    display: none;
   }
 
   .name-field {
@@ -1039,8 +1034,16 @@ li {
     top: calc(57% - 48px / 2);
   }
 
-  .contact-form-divisor {
+  .desk-contact-form-divisor {
+    display: flex;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
     width: 100%;
+    background: #3a3837;
+    border: 2px solid sandybrown;
   }
 
   .ellipse {
