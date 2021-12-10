@@ -5,7 +5,7 @@
 .app-wrap {
   position: relative;
   width: 375px;
-  height: 4516px;
+  height: 4700px;
   background: #191765;
 }
 
@@ -36,6 +36,14 @@
 }
 
 .desk-nav-bar {
+  display: none;
+}
+
+.work-tag-left {
+  display: none;
+}
+
+.work-tag-right {
   display: none;
 }
 
@@ -300,33 +308,33 @@ li {
 }
 
 .social-media-item-thumbup {
-  width: 40px;
-  height: 40px;
-  left: 40px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
 }
 
 .social-media-item-m {
-  width: 40px;
-  height: 40px;
-  left: 40px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
 }
 
 .social-media-item-twitter {
-  width: 40px;
-  height: 40px;
-  left: 40px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
 }
 
 .social-media-item-fa {
-  width: 40px;
-  height: 40px;
-  left: 40px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
 }
 
 .social-media-item-linkdin {
-  width: 40px;
-  height: 40px;
-  left: 40px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
 }
 
 .social-media-item-fa:hover {
@@ -718,8 +726,7 @@ li {
 @media (min-width: 992px) {
   .app-wrap {
     width: 100%;
-    height: 3800px;
-    border: 2px solid yellow;
+    height: 3860px;
   }
 
   .app-header {
@@ -762,9 +769,9 @@ li {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    width: 500px;
+    width: 50%;
     height: 700px;
-    left: calc(50% - 500px / 2);
+    left: calc(50% - 50% / 2);
     top: 114px;
     flex: none;
     order: 0;
@@ -772,7 +779,7 @@ li {
   }
 
   .simple-content {
-    width: 90%;
+    width: 50%;
   }
 
   .divisor {
@@ -784,7 +791,7 @@ li {
     flex-direction: row;
     align-items: flex-start;
     position: static;
-    width: 90%;
+    width: 60%;
     height: 250.15px;
     left: 12px;
     flex: none;
@@ -837,23 +844,44 @@ li {
   .social-media-list {
     position: absolute;
     display: flex;
-    width: 238px;
+    width: 100%;
     align-items: center;
-    margin-left: 13%;
+    padding-top: 30%;
+    margin-left: 3%;
+  }
+
+  .work-tag-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 77px;
+    height: 40px;
+    top: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: -62%;
+    margin-top: 27%;
+  }
+
+  .work-tag-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 77px;
+    height: 40px;
+    top: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 139%;
+    margin-top: -9%;
   }
 
   .arrow-line {
-    position: static;
-    display: flex;
-    width: 200px;
-    align-items: center;
-  }
-
-  .work-text {
-    color: #a2a3ae;
-    padding-left: 14px;
-    display: flex;
-    margin: -14px;
+    display: none;
   }
 
   .work-place-img {
@@ -870,8 +898,8 @@ li {
     align-items: center;
     position: absolute;
     width: 80%;
-    height: 2000px;
-    top: 800px;
+    height: 1907px;
+    top: 27%;
     left: calc(50% - 80% / 2);
     order: 0;
     flex-grow: 0;
@@ -909,8 +937,8 @@ li {
 
   .desk-work-divisor {
     position: static;
-    width: 80%;
-    top: 150px;
+    width: 100%;
+    margin-top: 2%;
     border: 1px solid #646369;
   }
 
@@ -918,6 +946,7 @@ li {
     display: grid;
     grid-template-columns: 50% 50%;
     row-gap: 80px;
+    column-gap: 2%;
     position: static;
     top: 220px;
     width: 100%;
@@ -965,7 +994,7 @@ li {
     position: absolute;
     width: 600px;
     height: 730px;
-    top: 2700px;
+    top: 77%;
     left: calc(50% - 600px / 2);
   }
 
@@ -974,15 +1003,16 @@ li {
   }
 
   .footer {
-    margin-top: 80%;
-  }
-
-  .social-media-list-end {
-    padding-left: 40%;
+    margin-top: 95%;
   }
 
   .end-email {
-    padding-left: 20%;
+    padding-left: 40%;
+    padding-top: 10%;
+  }
+
+  .social-media-list-end {
+    padding-left: 15%;
   }
 
   .name-field {
@@ -1009,6 +1039,10 @@ li {
     top: calc(57% - 48px / 2);
   }
 
+  .contact-form-divisor {
+    width: 100%;
+  }
+
   .ellipse {
     position: absolute;
     width: 184px;
@@ -1021,12 +1055,12 @@ li {
 
   .ellipse-image {
     position: absolute;
-    width: 109px;
-    height: 226px;
-    left: 515px;
+    width: 128px;
+    height: 165px;
+    left: 575px;
     top: 365px;
     background: #edecff;
-    filter: blur(50px);
+    filter: blur(39px);
   }
 
   .ellipse-img3 {
@@ -1042,10 +1076,10 @@ li {
 
   .ellipse-img4 {
     position: absolute;
-    width: 159px;
+    width: 102px;
     height: 402px;
-    left: 673.28px;
-    top: 664px;
+    left: 664px;
+    top: 641px;
     background: #edecff;
     filter: blur(50px);
     transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
@@ -1063,9 +1097,9 @@ li {
 
   .ellipse-img6 {
     position: absolute;
-    width: 165.19px;
+    width: 58px;
     height: 300px;
-    left: 900px;
+    left: 697px;
     top: 1312px;
     background: #edecff;
     filter: blur(50px);
