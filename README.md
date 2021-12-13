@@ -13,6 +13,10 @@
  2)CSS <br>
  3)Media Queries <br>
 
+ Live Demo
+ <hr>
+ <a href:"https://ifzarasool.github.io/Portfolio-desktop-version/">Live demo</a>
+
 # Installaion:
 1) Linters <br>
 2) npm <br>
