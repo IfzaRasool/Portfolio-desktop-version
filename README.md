@@ -1,23 +1,26 @@
-# Portfolio-mobile-version-skeleton
 
 # Project:
 # Portfolio-Desktop Version
  Responsive Web Template:
-<img src="Icons/project-image.png">
+![screenshot](Icons/project-image.png)
+
 
 #Build with
 
 # Languages :
 
- 1)HTML <br>
- 2)CSS <br>
- 3)Media Queries <br>
+ - HTML 
+ - CSS 
+
+
+ #Live Demo
+[Live demo here](https://ifzarasool.github.io/Portfolio-desktop-version/) 
 
 # Installaion:
-1) Linters <br>
-2) npm <br>
-3) webhint <br>
-4) stylelintrc <br>
+ - Linters 
+ - npm 
+ - webhint 
+ - stylelintrc
 
  # FrameWork:
  visual studio code/optional
@@ -32,12 +35,13 @@ Twitter: @IfzaRasool
 LinkedIn: Ifza Arain
 
 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
 # Credits
-https://github.com/IfzaRasool/Portfolio-setup-and-mobile-version-skeleton.git
+
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://www.youtube.com/watch?v=bsVHag6qijY&list=PLu8EoSxDXHP7xj_y6NIAhy0wuCd4uVdid&index=7
 https://learn.shayhowe.com/html-css/opening-the-box-model/#how-are-elements-displayed
@@ -54,5 +58,6 @@ Inspiration
 etc
 
 📝 # License
-This project is MIT licensed.
+This project is [MIT](./MIT.md) licensed.
+
 
