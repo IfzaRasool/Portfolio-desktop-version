@@ -37,6 +37,10 @@ html {
   text-decoration: none;
 }
 
+.header-icon:hover, .header-icon:active {
+  background-color: rgb(0, 217, 255);
+}
+
 .mob-nav-bar {
   position: relative;
   left: -2.188em;
@@ -385,7 +389,7 @@ li {
   position: absolute;
   width: 20.4375rem;
   height: 51.5em;
-  top: 250rem;
+  top: 260rem;
 }
 
 .main-contact {

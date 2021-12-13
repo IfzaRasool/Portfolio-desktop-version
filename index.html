@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Ifza's Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -14,19 +14,19 @@
 <body>
     <main class="app-wrap">
         <header class="app-header">
-            <a href="/" class="logo">Ifza Rasool</a>
-            <nav class="mob-nav-bar"><a href="#"><img src="Icons/Union.png" alt="nevigation image"></a> </nav>
+            <a href="#About" class="logo">Ifza Rasool</a>
+            <nav class="mob-nav-bar"><a href="#About"><img src="Icons/Union.png" alt="nevigation image"></a> </nav>
             <nav class="desk-nav-bar">
-                <a href="/">Portfolio</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
-                <a href="/"><img src="Icons/mail.png" alt="mail image"></a>
+                <a class="header-icon" href="#About">Portfolio</a>
+                <a class="header-icon" href="#About">About</a>
+                <a class="header-icon" href="#contact-section">Contact</a>
+                <a  href="#contact-section"><img src="Icons/mail.png" alt="mail image"></a>
             </nav>
         </header>
 
         <aside class="ellipse">"<img src="Icons/Ellipse1.svg" alt="top ellipse image"></aside>
 
-        <section class="home-page">
+        <section class="home-page" id="About">
             <h1 class="primary-content">Ifza Rasool</h1>
             <h2 class="secondry-content">Software Developer</h2>
             <p class="simple-content">I can help you build a product , feature or website Look through some of my work
@@ -269,7 +269,7 @@
         </section>
         <!--Work Section end-->
         <!--Contact form Start-->
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
             <section class="main-contact">
                 <h1 class="contact-heading">CONTACT US</h1>
                 <p class="content">If you have an application you are interested in developing, a feature that you need
