@@ -320,7 +320,7 @@ li {
   width: 101px;
   height: 57px;
   top: 421px;
-  background: #7d73fc;
+  background: rgba(147, 144, 255, 1);
   color: #edecff;
   flex: none;
   order: 3;
@@ -506,7 +506,7 @@ li {
   width: 101px;
   height: 57px;
   top: 647px;
-  background: #7d73fc;
+  background: rgba(147, 144, 255, 1);
   color: #edecff;
   flex: none;
   order: 3;
