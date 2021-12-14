@@ -320,7 +320,7 @@ li {
   width: 101px;
   height: 57px;
   top: 421px;
-  background: rgba(147, 144, 255, 1);
+  background: rgb(42, 40, 80);
   color: rgba(255, 255, 255, 1);
   flex: none;
   order: 3;
@@ -537,6 +537,27 @@ li {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+}
+
+.contact-label-name {
+  font-weight: 800;
+  color: #dcdce8;
+  margin-top: -3rem;
+  margin-left: -8rem;
+}
+
+.contact-label-email {
+  font-weight: 800;
+  color: #dcdce8;
+  margin-top: 5rem;
+  margin-left: -8rem;
+}
+
+.contact-label-area {
+  font-weight: 800;
+  color: #dcdce8;
+  margin-top: 5rem;
+  margin-left: -8rem;
 }
 
 @media (min-width: 992px) {
@@ -822,7 +843,7 @@ li {
     width: 598px;
     height: 50px;
     left: 0;
-    top: calc(47% - 48px / 2);
+    top: calc(50% - 48px / 2);
   }
 
   .area-field {
@@ -830,7 +851,7 @@ li {
     width: 598px;
     height: 150px;
     left: 0;
-    top: calc(57% - 48px / 2);
+    top: calc(64% - 48px / 2);
   }
 
   .ellipse {
