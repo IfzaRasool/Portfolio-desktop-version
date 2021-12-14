@@ -542,22 +542,20 @@ li {
 .contact-label-name {
   font-weight: 800;
   color: #dcdce8;
-  margin-top: -3rem;
-  margin-left: -8rem;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 .contact-label-email {
   font-weight: 800;
   color: #dcdce8;
-  margin-top: 5rem;
-  margin-left: -8rem;
+  margin-top: 3.5rem;
 }
 
 .contact-label-area {
   font-weight: 800;
   color: #dcdce8;
-  margin-top: 5rem;
-  margin-left: -8rem;
+  margin-top: 4.5rem;
 }
 
 @media (min-width: 992px) {
@@ -852,6 +850,27 @@ li {
     height: 150px;
     left: 0;
     top: calc(64% - 48px / 2);
+  }
+
+  .contact-label-name {
+    font-weight: 800;
+    color: #dcdce8;
+    margin-top: -3rem;
+    margin-left: -8rem;
+  }
+
+  .contact-label-email {
+    font-weight: 800;
+    color: #dcdce8;
+    margin-top: 5rem;
+    margin-left: -8rem;
+  }
+
+  .contact-label-area {
+    font-weight: 800;
+    color: #dcdce8;
+    margin-top: 5rem;
+    margin-left: -8rem;
   }
 
   .ellipse {
