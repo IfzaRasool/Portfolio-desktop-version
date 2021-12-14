@@ -539,20 +539,20 @@ li {
   color: #ebebff;
 }
 
-.contact-label-name {
+#contact-label-name {
   font-weight: 800;
   color: #dcdce8;
   margin-top: 0;
   margin-left: 0;
 }
 
-.contact-label-email {
+#contact-label-email {
   font-weight: 800;
   color: #dcdce8;
   margin-top: 3.5rem;
 }
 
-.contact-label-area {
+#contact-label-area {
   font-weight: 800;
   color: #dcdce8;
   margin-top: 4.5rem;
@@ -852,21 +852,21 @@ li {
     top: calc(64% - 48px / 2);
   }
 
-  .contact-label-name {
+  #contact-label-name {
     font-weight: 800;
     color: #dcdce8;
     margin-top: -3rem;
     margin-left: -8rem;
   }
 
-  .contact-label-email {
+  #contact-label-email {
     font-weight: 800;
     color: #dcdce8;
     margin-top: 5rem;
     margin-left: -8rem;
   }
 
-  .contact-label-area {
+  #contact-label-area {
     font-weight: 800;
     color: #dcdce8;
     margin-top: 5rem;
