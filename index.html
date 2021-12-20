@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Ifza's Portfolio</title>
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <main class="app-wrap">
         <header class="app-header">
             <a href="#About" class="logo">Ifza Rasool</a>
-            <nav class="mob-nav-bar"><a href="#About"><img src="Icons/Union.png" alt="navigation-icon"></a> </nav>
-            <nav class="desk-nav-bar">
-                <a class="header-icon" href="#About">Portfolio</a>
-                <a class="header-icon" href="#About">About</a>
-                <a class="header-icon" href="#contact-section">Contact</a>
-                <a  href="#contact-section"><img src="Icons/mail.png" alt="mail-icon"></a>
-            </nav>
+
+            <div class="hamburger">
+                <img class="menuIcon material-icons" src="Icons/Union.png" alt="navigation-icon">
+                <i class="closeIcon material-icons">close</i>
+            </div>
+                <ul class="menu">
+                  <li><a class="menuItem" href="#">Profile</a></li>
+                  <li><a class="menuItem" href="#">About</a></li>
+                  <li><a class="menuItem" href="#">Contacts</a></li>
+                  <li><a class="nav-link" href="#"><img src="Icons/mail.png" alt="message-icon"></a></li>
+                </ul>
+              
         </header>
 
         <aside class="ellipse">"<img src="Icons/Ellipse1.svg" alt="top ellipse image"></aside>
@@ -282,7 +289,7 @@
                         required>
                     <label  id="contact-label-area"  for ="message">Enter yout text</label><textarea class="area-field" id="message" name="message"  placeholder="Enter text here"
                         maxlength="50" required></textarea>
-                    <button class="contact-btn" type="submit">Send</button>
+                    <button class="contact-btn" type="submit" onclick="msg()">Send</button>
 
                 </form>
             </section>
@@ -301,6 +308,8 @@
         </section>
         
     </main>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
