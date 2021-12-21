@@ -12,9 +12,22 @@ html {
   margin-top: 0;
 }
 
+.mob-nav-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
 .arrow {
-  position: fixed;
-  padding-left: 21rem;
+  display: flex;
+  padding-left: 30rem;
+  color: #7d73fc;
+}
+
+.about-arrow {
+  display: flex;
+  padding-left: 32rem;
   color: #7d73fc;
 }
 
@@ -67,6 +80,7 @@ a {
 .app-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 100%;
   background: #191765;
   padding-top: 3.625em;
@@ -95,7 +109,7 @@ a {
   color: #6070ff;
   text-decoration: none;
   z-index: 100;
-  top: 1rem;
+  top: -0.5rem;
   right: 1rem;
   cursor: pointer;
 }
@@ -620,6 +634,7 @@ li {
     top: 0;
     left: 0;
     text-decoration: none;
+    align-items: center;
   }
 
   .logo {
