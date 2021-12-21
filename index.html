@@ -15,7 +15,7 @@
 
 <body>
     <main class="app-wrap">
-        <header class="app-header">
+        <header class="app-header" id="portfolio-section">
             <a href="#About" class="logo">Ifza Rasool</a>
 
             <div class="hamburger">
@@ -23,9 +23,18 @@
                 <i class="closeIcon material-icons">close</i>
             </div>
                 <ul class="menu">
-                  <li><a class="menuItem" href="#">Profile</a></li>
-                  <li><a class="menuItem" href="#">About</a></li>
-                  <li><a class="menuItem" href="#">Contacts</a></li>
+                  <div class="mobile-nav-arrow">
+                  <li><a class="menuItem" href="#portfolio-section">Profile</a></li>
+                  <p class="arrow">></p>
+                </div>
+                <div class="mobile-nav-arrow">
+                  <li><a class="menuItem" href="#about-section">About</a></li>
+                  <p class="arrow">></p>
+                </div>
+                <div class="mobile-nav-arrow">
+                  <li><a class="menuItem" href="#contact-section">Contacts</a></li>
+                  <p class="contact-arrow">></p>
+                </div>
                   <li><a class="nav-link" href="#"><img src="Icons/mail.png" alt="message-icon"></a></li>
                 </ul>
               
@@ -33,7 +42,7 @@
 
         <aside class="ellipse">"<img src="Icons/Ellipse1.svg" alt="top ellipse image"></aside>
 
-        <section class="home-page" id="About">
+        <section class="home-page" id="about-section">
             <h1 class="primary-content">Ifza Rasool</h1>
             <h2 class="secondry-content">Software Developer</h2>
             <p class="simple-content">I can help you build a product , feature or website Look through some of my work

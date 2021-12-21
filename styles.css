@@ -12,6 +12,24 @@ html {
   margin-top: 0;
 }
 
+.mobile-nav-arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.arrow {
+  justify-content: space-between;
+  padding-left: 270px;
+  color: #7d73fc;
+}
+
+.contact-arrow {
+  padding-left: 238px;
+  color: #7d73fc;
+}
+
 .closeIcon {
   display: none;
 }
@@ -34,11 +52,14 @@ html {
 }
 
 .menuItem {
-  color: #ffff;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 a {
-  color: #ffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -642,6 +663,11 @@ li {
     left: 54rem;
     justify-content: space-between;
     text-decoration: none;
+  }
+
+  .arrow,
+  .contact-arrow {
+    display: none;
   }
 
   .main-content {
