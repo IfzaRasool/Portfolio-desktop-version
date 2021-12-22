@@ -29,10 +29,19 @@ html {
   padding-left: 2rem;
 }
 
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 28px;
+  left: 20rem;
+  color: #7d73fc;
+}
+
 .menu-arrow1 {
   position: absolute;
   align-items: center;
-  top: 4.75rem;
+  top: 5rem;
   left: -4rem;
   color: #7d73fc;
 }
@@ -40,7 +49,7 @@ html {
 .menu-arrow2 {
   position: absolute;
   align-items: center;
-  top: 9rem;
+  top: 9.75rem;
   left: -4rem;
   color: #7d73fc;
 }
@@ -48,7 +57,7 @@ html {
 .menu-arrow3 {
   position: absolute;
   align-items: center;
-  top: 13.5rem;
+  top: 14.5rem;
   left: -4rem;
   color: #7d73fc;
 }
