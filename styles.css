@@ -12,27 +12,42 @@ html {
   margin-top: 0;
 }
 
-.mob-nav-menu {
-  display: flex;
-  flex-direction: column;
-  min-width: 100%;
-  justify-content: space-between;
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10% 10% 10%;
+  align-items: center;
+}
+
+.container-item1 {
+  color: rgba(237, 236, 255, 1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-item2 {
+  padding-left: 10rem;
 }
 
 .arrow {
   display: flex;
-  padding-left: 30rem;
+  justify-content: space-between;
+  position: absolute;
+  height: 28px;
+  left: 20rem;
   color: #7d73fc;
 }
 
-.about-arrow {
+.menu-wrap {
   display: flex;
-  padding-left: 32rem;
   color: #7d73fc;
 }
 
 .closeIcon {
-  display: none;
+  padding-left: 0;
 }
 
 .menu {
@@ -65,6 +80,7 @@ a {
 }
 
 .showMenu {
+  position: fixed;
   transform: translateY(0);
 }
 
@@ -103,8 +119,12 @@ a {
 }
 
 .hamburger {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  min-width: 0;
   position: relative;
-  left: -2.188em;
+  left: 0;
   height: 0.75rem;
   color: #6070ff;
   text-decoration: none;
@@ -666,6 +686,7 @@ li {
     left: 54rem;
     justify-content: space-between;
     text-decoration: none;
+    border: 2px solid red;
   }
 
   .menuItem {
