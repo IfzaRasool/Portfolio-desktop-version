@@ -14,9 +14,9 @@ html {
 
 .header-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 10% 10% 10%;
+  grid-template-rows: 15% 15% 15%;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .container-item1 {
@@ -26,10 +26,7 @@ html {
   font-size: 24px;
   line-height: 32px;
   font-family: 'Roboto', sans-serif;
-}
-
-.container-item2 {
-  padding-left: 10rem;
+  padding-left: 2rem;
 }
 
 .arrow {
@@ -41,13 +38,39 @@ html {
   color: #7d73fc;
 }
 
-.menu-wrap {
-  display: flex;
+.menu-arrow1 {
+  position: absolute;
+  align-items: center;
+  top: 4.75rem;
+  left: -4rem;
+  color: #7d73fc;
+}
+
+.menu-arrow2 {
+  position: absolute;
+  align-items: center;
+  top: 9rem;
+  left: -4rem;
+  color: #7d73fc;
+}
+
+.menu-arrow3 {
+  position: absolute;
+  align-items: center;
+  top: 13.5rem;
+  left: -4rem;
   color: #7d73fc;
 }
 
 .closeIcon {
-  padding-left: 0;
+  position: absolute;
+  left: -4rem;
+  color: #c8c8d4;
+}
+
+.menuIcon {
+  position: absolute;
+  left: -4rem;
 }
 
 .menu {
@@ -64,7 +87,7 @@ html {
   background: #191765;
   color: white;
   list-style: none;
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 
 .menuItem {
@@ -80,7 +103,6 @@ a {
 }
 
 .showMenu {
-  position: fixed;
   transform: translateY(0);
 }
 
@@ -89,7 +111,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 23.438em;
+  min-width: 23.438rem;
   margin-top: 0;
 }
 
@@ -663,6 +685,7 @@ li {
 
   .nav-link {
     display: inherit;
+    padding-left: 2rem;
   }
 
   a {
@@ -672,6 +695,16 @@ li {
 
   .hamburger {
     display: none;
+  }
+
+  .container-item1 {
+    color: rgba(237, 236, 255, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2rem;
   }
 
   .menu {
@@ -686,7 +719,6 @@ li {
     left: 54rem;
     justify-content: space-between;
     text-decoration: none;
-    border: 2px solid red;
   }
 
   .menuItem {
