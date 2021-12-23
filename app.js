@@ -7,7 +7,6 @@ const menuArrow1 = document.querySelector('.menu-arrow1');
 const menuArrow2 = document.querySelector('.menu-arrow2');
 const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
-/* const portfolioJs = document.querySelector('.main-post-container'); */
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
