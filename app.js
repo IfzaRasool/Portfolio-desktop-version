@@ -7,6 +7,7 @@ const menuArrow1 = document.querySelector('.menu-arrow1');
 const menuArrow2 = document.querySelector('.menu-arrow2');
 const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
+/* const portfolioJs = document.querySelector('.main-post-container'); */
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
@@ -35,7 +36,8 @@ hamburger.addEventListener('click', toggleMenu);
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
 });
-const openModalButtons = document.querySelectorAll('.seeButton');
+
+const openModalButtons = document.querySelectorAll('.work-button');
 const appWrapper = document.querySelector('.app-wrap');
 const modalClose = document.querySelector('.modal-close');
 
@@ -43,9 +45,8 @@ function openModal() {
   appWrapper.style.display = 'none';
   modalContainer.style.display = 'inherit';
 }
-modalContainer.addEventListener('click', openModal);
-openModalButtons.forEach((seeButton) => {
-  seeButton.addEventListener('click', openModal);
+openModalButtons.forEach((openModalButtons) => {
+  openModalButtons.addEventListener('click', openModal);
 });
 
 function closeModal() {
