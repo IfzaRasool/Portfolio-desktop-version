@@ -1,10 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable func-names */
-/* eslint-disable linebreak-style */
-/* eslint-disable prefer-arrow-callback */
-/* eslint-disable linebreak-style */
-/* eslint-disable space-in-parens */
-/* eslint-disable linebreak-style */
 const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
@@ -13,10 +6,14 @@ const menuIcon = document.querySelector('.menuIcon');
 const menuArrow1 = document.querySelector('.menu-arrow1');
 const menuArrow2 = document.querySelector('.menu-arrow2');
 const menuArrow3 = document.querySelector('.menu-arrow3');
+const modalContainer = document.querySelector('.modal');
+
+modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
 menuArrow1.style.display = 'none';
 menuArrow2.style.display = 'none';
 menuArrow3.style.display = 'none';
+
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
@@ -35,6 +32,24 @@ function toggleMenu() {
   }
 }
 hamburger.addEventListener('click', toggleMenu);
-menuItems.forEach(function (menuItem) {
+menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
 });
+const openModalButtons = document.querySelectorAll('.seeButton');
+const appWrapper = document.querySelector('.app-wrap');
+const modalClose = document.querySelector('.modal-close');
+
+function openModal() {
+  appWrapper.style.display = 'none';
+  modalContainer.style.display = 'inherit';
+}
+modalContainer.addEventListener('click', openModal);
+openModalButtons.forEach((seeButton) => {
+  seeButton.addEventListener('click', openModal);
+});
+
+function closeModal() {
+  appWrapper.style.display = 'inherit';
+  modalContainer.style.display = 'none';
+}
+modalClose.addEventListener('click', closeModal);

@@ -12,6 +12,115 @@ html {
   margin-top: 0;
 }
 
+.modal-container {
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.2s;
+  font-size: 30px;
+  font-weight: 600;
+  z-index: 99;
+  background: #191765;
+  color: white;
+  list-style: none;
+  padding-top: 0;
+}
+
+.modal {
+  display: flex;
+  position: relative;
+  min-width: 60%;
+  height: 60rem;
+  margin: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #ffff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.modal-heading {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffff;
+  padding-left: 1rem;
+}
+
+.modal-post {
+  position: absolute;
+  width: 80%;
+  left: 2rem;
+  height: 11.313rem;
+  top: 5rem;
+}
+
+.modal-paragraph {
+  position: absolute;
+  min-width: 80%;
+  top: 18rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffff;
+  text-align: center;
+}
+
+.modal-languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+  padding: 0;
+  margin-left: 0;
+}
+
+.modal-divisor {
+  margin: 0;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.modal-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  width: 101px;
+  height: 57px;
+  margin: 0.5rem;
+  background: rgb(71, 65, 238);
+  color: rgb(214, 229, 240);
+}
+
+.modal-close {
+  display: flex;
+  justify-content: space-between;
+  width: 1rem;
+  height: 1rem;
+}
+
+.modal-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
 .header-container {
   display: grid;
   grid-template-rows: 15% 15% 15%;
@@ -27,15 +136,6 @@ html {
   line-height: 32px;
   font-family: 'Roboto', sans-serif;
   padding-left: 2rem;
-}
-
-.arrow {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  height: 28px;
-  left: 20rem;
-  color: #7d73fc;
 }
 
 .menu-arrow1 {
