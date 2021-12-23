@@ -8,6 +8,7 @@ const menuArrow2 = document.querySelector('.menu-arrow2');
 const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
 const portfolioJs = document.querySelector('.main-post-container');
+const deskportfolioJs = document.querySelector('.desk-main-post-container');
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
@@ -42,6 +43,7 @@ const workObject = [{
   images: 'Icons/Rectangle.png',
   cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industries standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
   languages: ['css', 'html', 'bootstrap', 'Ruby'],
+
 }];
 
 for (let i = 0; i <= 4; i += 1) {
@@ -59,11 +61,53 @@ for (let i = 0; i <= 4; i += 1) {
       <li><img src=${allWork.images} alt="divide line2"></li>
       <li>${allWork.languages[j + 2]}</li>
       <li> <img src=${allWork.images} alt="divide line3"></li>
-      <li> <img src=${allWork.images} alt="divide line3"></li>
       <li>${allWork.languages[j + 3]}</li>
   </ul>
   <button class="work-button"> See Project</button>
 </section>
+`;
+  }
+}
+for (let i = 0; i <= 2; i += 1) {
+  for (let j = 0; j < workObject.length; j += 1) {
+    const allWork = workObject[j];
+    deskportfolioJs.innerHTML += `
+    <section class="desk-primary-post-sec">
+    <div class="desk-post-image"></div>
+    <div class="desk-ellipse-work-sec1"></div>
+    </section>
+    <section class="desk-primary-post-sec">
+    <h2 class="desk-post-heading">${allWork.Title}</h2>
+    <p class="desk-post-detail">${allWork.cardDescription}</p>
+    <ul class="languages">
+        <li>${allWork.languages[j]}</li>
+        <li><img src="${allWork.images}" alt="divide line1"></li>
+        <li>${allWork.languages[j + 1]}</li>
+        <li><img src="${allWork.images}" alt="divide line2"></li>
+        <li>${allWork.languages[j + 2]}</li>
+        <li> <img src="${allWork.images}" alt="divide line3"></li>
+        <li>${allWork.languages[j + 3]}</li>
+    </ul>
+    <button class="work-button">See Project</button>
+    </section>
+    <section class="desk-primary-post-sec">
+    <h2 class="desk-post-heading">${allWork.Title}</h2>
+    <p class="desk-post-detail">${allWork.cardDescription}</p>
+    <ul class="languages">
+        <li>${allWork.languages[j]}</li>
+        <li><img src="${allWork.images}" alt="divide line1"></li>
+        <li>${allWork.languages[j + 1]}</li>
+        <li><img src="${allWork.images}" alt="divide line2"></li>
+        <li>${allWork.languages[j + 2]}</li>
+        <li> <img src="${allWork.images}" alt="divide line3"></li>
+        <li>${allWork.languages[j + 3]}</li>
+    </ul>
+    <button class="work-button">See Project</button>
+    </section>
+                <section class="desk-primary-post-sec">
+                    <div class="desk-post-image"></div>
+                    <div class="ellipse-img4"></div>
+                </section>
 `;
   }
 }
@@ -81,7 +125,7 @@ openModalButtons.forEach((openModalButtons) => {
 });
 
 function closeModal() {
-  appWrapper.style.display = 'inherit';
   modalContainer.style.display = 'none';
+  appWrapper.style.display = 'inherit';
 }
 modalClose.addEventListener('click', closeModal);

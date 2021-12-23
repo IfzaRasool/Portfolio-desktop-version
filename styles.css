@@ -29,7 +29,7 @@ html {
   display: flex;
   position: relative;
   min-width: 60%;
-  height: 60rem;
+  height: 80rem;
   margin: 4rem 2rem;
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid #ffff;
@@ -141,7 +141,7 @@ html {
 .menu-arrow1 {
   position: absolute;
   align-items: center;
-  top: 5rem;
+  top: 5.5rem;
   left: -4rem;
   color: #7d73fc;
 }
@@ -149,7 +149,7 @@ html {
 .menu-arrow2 {
   position: absolute;
   align-items: center;
-  top: 9.75rem;
+  top: 10rem;
   left: -4rem;
   color: #7d73fc;
 }
@@ -157,7 +157,7 @@ html {
 .menu-arrow3 {
   position: absolute;
   align-items: center;
-  top: 14.5rem;
+  top: 15rem;
   left: -4rem;
   color: #7d73fc;
 }
@@ -432,10 +432,6 @@ li {
 }
 
 /* work section */
-.desk-work-section-wrap {
-  display: none;
-}
-
 .work-section-wrap {
   display: flex;
   flex-direction: column;
@@ -592,7 +588,7 @@ li {
   position: absolute;
   width: 20.4375rem;
   height: 51.5em;
-  top: 260rem;
+  top: 301rem;
 }
 
 .main-contact {
@@ -939,8 +935,7 @@ li {
     align-items: center;
     position: absolute;
     width: 80%;
-    height: 120.1875rem;
-    margin-top: 197rem;
+    top: 62rem;
     left: calc(50% - 80% / 2);
     order: 0;
     flex-grow: 0;
@@ -1035,7 +1030,7 @@ li {
     position: absolute;
     width: 37.5rem;
     height: 45.625rem;
-    margin-top: 200rem;
+    margin-top: 257rem;
     left: calc(50% - 37.5rem / 2);
     padding: 0;
     top: 0;
@@ -1162,5 +1157,75 @@ li {
     background: #edecff;
     filter: blur(50px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
+  }
+
+  .modal-post {
+    position: absolute;
+    background-image: url("desktop-portfolio.png");
+    width: 90%;
+    height: 42%;
+    left: 2rem;
+    top: 5rem;
+  }
+
+  .modal-paragraph {
+    position: absolute;
+    min-width: 20%;
+    top: 45rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffff;
+    text-align: center;
+  }
+
+  .modal-languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .modal-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .modal-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    width: 101px;
+    height: 57px;
+    margin: 0.5rem;
+    background: rgb(71, 65, 238);
+    color: rgb(214, 229, 240);
+  }
+
+  .modal-close {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .modal-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
   }
 }
