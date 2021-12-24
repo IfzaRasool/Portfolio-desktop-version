@@ -102,7 +102,7 @@ html {
   width: 115px;
   height: 57px;
   margin: 0.5rem;
-  background: rgb(71, 65, 238);
+  background: #7d73fc;
   color: rgb(214, 229, 240);
 }
 
@@ -1215,13 +1215,13 @@ li {
   .modal-button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    width: 120px;
+    padding: 1rem;
+    width: 143px;
     height: 57px;
-    margin: 0.5rem;
-    background: rgb(71, 65, 238);
+    margin: 1.5rem;
+    background: #7d73fc;
     color: rgb(214, 229, 240);
   }
 
