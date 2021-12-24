@@ -11,9 +11,11 @@
 
  - HTML 
  - CSS 
+ - JavaScript
 
 
- #Live Demo
+ # Live Demo :
+ 
 [Live demo here](https://ifzarasool.github.io/Portfolio-desktop-version/) 
 
 # Installaion:
