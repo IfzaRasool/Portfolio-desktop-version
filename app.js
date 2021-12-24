@@ -132,7 +132,6 @@ form.addEventListener('submit', (e) => {
   } else { e.preventDefault(); }
   errMsg.innerHTML = '* Please enter a correct email in lowercase';
 });
-<<<<<<< preserve-data-in-browser
 
 /* store data */
 const storeName = document.getElementById('name');
@@ -166,6 +165,3 @@ storeEmail.onchange = storeLocally;
 msgTxt.onchange = storeLocally;
 
 form.addEventListener('submit', storeLocally, preFillData);
-=======
->>>>>>> main
-
