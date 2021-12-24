@@ -142,5 +142,5 @@ form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     errMsg.innerHTML = '';
   } else { e.preventDefault(); }
-  errMsg.innerHTML = '*Email must be in lowercase letters';
+  errMsg.innerHTML = '* Please enter a correct email in lowercase';
 });
