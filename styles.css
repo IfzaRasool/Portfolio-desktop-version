@@ -143,7 +143,7 @@ html {
 .header-container {
   display: grid;
   grid-template-rows: 15% 15% 15%;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 80% 15%;
   align-items: center;
   padding-top: 2rem;
 }
@@ -155,15 +155,16 @@ html {
   font-size: 24px;
   line-height: 32px;
   font-family: 'Roboto', sans-serif;
+  padding-left: 2rem;
 }
 
-.arrow-style{
+.menu-arrow {
   color: #7d73fc;
 }
 
 .closeIcon {
   position: absolute;
-  left: -4rem;
+  left: -2rem;
   color: #c8c8d4;
 }
 
@@ -239,7 +240,7 @@ a {
   display: none;
 }
 
-.hamburger {
+.hamburger1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
@@ -1230,5 +1231,9 @@ li {
     color: red;
     padding-top: 12rem;
     margin-left: -7rem;
+  }
+
+  .menu-arrow {
+    display: none;
   }
 }

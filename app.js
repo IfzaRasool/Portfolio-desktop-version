@@ -58,6 +58,7 @@ for (let i = 0; i <= 4; i += 1) {
 `;
   }
 }
+
 for (let i = 0; i <= 2; i += 1) {
   for (let j = 0; j < workObject.length; j += 1) {
     const allWork = workObject[j];
@@ -127,19 +128,19 @@ const errMsg = document.querySelector('.err-msg');
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
-    errMsg.style.display = 'none';
+    errMsg.innerHTML = '';
   } else { e.preventDefault(); }
-  errMsg.innerHTML = '*Email must be in lowercase letters';
+  errMsg.innerHTML = '* Please enter a correct email in lowercase';
 });
-// Creating local storage
 
-const inname = document.getElementById('name');
-const inemail = document.getElementById('email');
+/* store data */
+const storeName = document.getElementById('name');
+const storeEmail = document.getElementById('email');
 const text = document.getElementById('message');
 
 function storeLocally() {
-  const localName = inname.value;
-  const localEmail = inemail.value;
+  const localName = storeName.value;
+  const localEmail = storeEmail.value;
   const localMessage = text.value;
 
   localStorage.setItem('name', localName);
@@ -148,8 +149,8 @@ function storeLocally() {
 }
 
 function preFillData() {
-  inname.value += localStorage.getItem('name');
-  inemail.value += localStorage.getItem('email');
+  storeName.value += localStorage.getItem('name');
+  storeEmail.value += localStorage.getItem('email');
   text.value += localStorage.getItem('message');
 }
 
@@ -159,8 +160,8 @@ if (localStorage.getItem('name')) {
   storeLocally();
 }
 
-inname.onchange = storeLocally;
-inemail.onchange = storeLocally;
+storeName.onchange = storeLocally;
+storeEmail.onchange = storeLocally;
 text.onchange = storeLocally;
 
 form.addEventListener('submit', storeLocally, preFillData);
