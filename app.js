@@ -128,7 +128,7 @@ const errMsg = document.querySelector('.err-msg');
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
-    errMsg.innerHTML = '';
+    errMsg.style.display = 'none';
   } else { e.preventDefault(); }
   errMsg.innerHTML = '* Please enter a correct email in lowercase';
 });
@@ -149,8 +149,8 @@ function storeLocally() {
 }
 
 function preFillData() {
-  storeName.value.value += localStorage.getItem('name');
-  storeEmail.value.value += localStorage.getItem('email');
+  storeName.value += localStorage.getItem('name');
+  storeEmail.value += localStorage.getItem('email');
   msgTxt.value += localStorage.getItem('message');
 }
 
