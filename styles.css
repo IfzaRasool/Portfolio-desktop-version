@@ -12,6 +12,12 @@ html {
   margin-top: 0;
 }
 
+.err-msg {
+  color: red;
+  padding-top: 10rem;
+  margin-left: 0;
+}
+
 .modal-container {
   position: relative;
   transform: translateY(0);
@@ -1238,5 +1244,11 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .err-msg {
+    color: red;
+    padding-top: 12rem;
+    margin-left: -7rem;
   }
 }

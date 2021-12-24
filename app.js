@@ -38,6 +38,8 @@ menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
 });
 
+/* POP Window */
+
 const workObject = [{
   Title: 'Multi-Post Stories',
   images: 'Icons/Rectangle.png',
@@ -129,3 +131,48 @@ function closeModal() {
   appWrapper.style.display = 'inherit';
 }
 modalClose.addEventListener('click', closeModal);
+
+/* form Validation */
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const errMsg = document.querySelector('.err-msg');
+
+form.addEventListener('submit', (e) => {
+  if (email.value === email.value.toLowerCase()) {
+    errMsg.innerHTML = '';
+  } else { e.preventDefault(); }
+  errMsg.innerHTML = '*Email must be in lowercase letters';
+});
+// Creating local storage
+
+const inname = document.getElementById('name');
+const inemail = document.getElementById('email');
+const text = document.getElementById('message');
+
+function storeLocally() {
+  const localName = inname.value;
+  const localEmail = inemail.value;
+  const localMessage = text.value;
+
+  localStorage.setItem('name', localName);
+  localStorage.setItem('email', localEmail);
+  localStorage.setItem('text', localMessage);
+}
+
+function preFillData() {
+  inname.value.value += localStorage.getItem('name');
+  inemail.value.value += localStorage.getItem('email');
+  text.value += localStorage.getItem('text');
+}
+
+if (localStorage.getItem('name')) {
+  preFillData();
+} else {
+  storeLocally();
+}
+
+inname.onchange = storeLocally;
+inemail.onchange = storeLocally;
+text.onchange = storeLocally;
+
+form.addEventListener('submit', storeLocally, preFillData);
