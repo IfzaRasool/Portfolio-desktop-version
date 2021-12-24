@@ -141,18 +141,18 @@ form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     errMsg.style.display = 'none';
   } else { e.preventDefault(); }
-  errMsg.innerHTML = '*Email must be in lowercase letters';
+  errMsg.innerHTML = '*Please put email in lowercase letters';
 });
 // Creating local storage
 
 const storeName = document.getElementById('name');
 const storeEmail = document.getElementById('email');
-const messageText = document.getElementById('message');
+const msgTxt = document.getElementById('message');
 
 function storeLocally() {
   const localName = storeName.value;
   const localEmail = storeEmail.value;
-  const localMessage = messageText.value;
+  const localMessage = msgTxt.value;
 
   localStorage.setItem('name', localName);
   localStorage.setItem('email', localEmail);
@@ -162,7 +162,7 @@ function storeLocally() {
 function preFillData() {
   storeName.value.value += localStorage.getItem('name');
   storeEmail.value.value += localStorage.getItem('email');
-  messageText.value += localStorage.getItem('message');
+  msgTxt.value += localStorage.getItem('message');
 }
 
 if (localStorage.getItem('name')) {
@@ -173,6 +173,6 @@ if (localStorage.getItem('name')) {
 
 storeName.onchange = storeLocally;
 storeEmail.onchange = storeLocally;
-messageText.onchange = storeLocally;
+msgTxt.onchange = storeLocally;
 
 form.addEventListener('submit', storeLocally, preFillData);
