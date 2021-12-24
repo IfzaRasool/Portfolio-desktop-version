@@ -3,33 +3,21 @@ const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-const menuArrow1 = document.querySelector('.menu-arrow1');
-const menuArrow2 = document.querySelector('.menu-arrow2');
-const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
 const portfolioJs = document.querySelector('.main-post-container');
 const deskportfolioJs = document.querySelector('.desk-main-post-container');
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
-menuArrow1.style.display = 'none';
-menuArrow2.style.display = 'none';
-menuArrow3.style.display = 'none';
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
-    menuArrow1.style.display = 'none';
-    menuArrow2.style.display = 'none';
-    menuArrow3.style.display = 'none';
     menuIcon.style.display = 'block';
   } else {
     menu.classList.add('showMenu');
     closeIcon.style.display = 'block';
-    menuArrow1.style.display = 'block';
-    menuArrow2.style.display = 'block';
-    menuArrow3.style.display = 'block';
     menuIcon.style.display = 'none';
   }
 }
@@ -70,6 +58,7 @@ for (let i = 0; i <= 4; i += 1) {
 `;
   }
 }
+
 for (let i = 0; i <= 2; i += 1) {
   for (let j = 0; j < workObject.length; j += 1) {
     const allWork = workObject[j];
@@ -139,20 +128,20 @@ const errMsg = document.querySelector('.err-msg');
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
-    errMsg.style.display = 'none';
+    errMsg.innerHTML = '';
   } else { e.preventDefault(); }
-  errMsg.innerHTML = '*Please put email in lowercase letters';
+  errMsg.innerHTML = '* Please enter a correct email in lowercase';
 });
-// Creating local storage
 
+/* store data */
 const storeName = document.getElementById('name');
 const storeEmail = document.getElementById('email');
-const msgTxt = document.getElementById('message');
+const text = document.getElementById('message');
 
 function storeLocally() {
   const localName = storeName.value;
   const localEmail = storeEmail.value;
-  const localMessage = msgTxt.value;
+  const localMessage = text.value;
 
   localStorage.setItem('name', localName);
   localStorage.setItem('email', localEmail);
@@ -160,9 +149,9 @@ function storeLocally() {
 }
 
 function preFillData() {
-  storeName.value.value += localStorage.getItem('name');
-  storeEmail.value.value += localStorage.getItem('email');
-  msgTxt.value += localStorage.getItem('message');
+  storeName.value += localStorage.getItem('name');
+  storeEmail.value += localStorage.getItem('email');
+  text.value += localStorage.getItem('message');
 }
 
 if (localStorage.getItem('name')) {
@@ -173,6 +162,6 @@ if (localStorage.getItem('name')) {
 
 storeName.onchange = storeLocally;
 storeEmail.onchange = storeLocally;
-msgTxt.onchange = storeLocally;
+text.onchange = storeLocally;
 
 form.addEventListener('submit', storeLocally, preFillData);

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ifza's Portfolio</title>
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
@@ -25,24 +25,26 @@
 </head>
 
 <body>
-  <main class="app-wrap" id="portfolio-section">
+
+    <main class="app-wrap" id="portfolio-section">
+      
         <header class="app-header">
             <a href="#About" class="logo">Ifza Rasool</a>
-
-          <div class="hamburger">
-                <img class="menuIcon" src="Icons/Union.png" alt="navigation-icon">
-                <img class="closeIcon" src="Icons/close.png" alt="close-icon">
-                <img  class="menu-arrow1" src="Icons/arrow-menu.png" alt="menu-arrow">
-                <img  class="menu-arrow2" src="Icons/arrow-menu.png" alt="menu-arrow">
-                <img  class="menu-arrow3" src="Icons/arrow-menu.png" alt="menu-arrow">
+            <div class="hamburger1">
+                <div class="hamburger">
+                    <img class="menuIcon" src="Icons/Union.png" alt="navigation-icon">
+                    <img class="closeIcon" src="Icons/close.png" alt="close-icon">
+                </div>
             </div>
                 <div class="menu header-container">
-                <a class="menuItem container-item1" href="#about-section">Portfolio</a>
-                <a class="menuItem container-item1" href="#about-section">About</a>
-                <a class="menuItem container-item1" href="#contact-section">Contact</a>
-                <a class="nav-link" href="#contact-section"><img src="Icons/mail.png" alt="message-icon"></a>
-            </div>
-              
+                    <a class="menuItem container-item1" href="#about-section">Portfolio</a><span
+                        class="menu-arrow">&#62;</span>
+                    <a class="menuItem container-item1" href="#about-section">About</a><span
+                        class="menu-arrow">&#62;</span>
+                    <a class="menuItem container-item1" href="#contact-section">Contact</a><span
+                        class="menu-arrow">&#62;</span>
+                    <a class="nav-link" href="#contact-section"><img src="Icons/mail.png" alt="message-icon"></a>
+                </div>
         </header>
 
         <aside class="ellipse">"<img src="Icons/Ellipse1.svg" alt="top ellipse image"></aside>
@@ -116,8 +118,8 @@
                 </div>
             </section>
 
-           <div class="main-post-container">
-                
+            <div class="main-post-container">
+
             </div>
         </section>
 
@@ -140,20 +142,20 @@
                 <p class="content">If you have an application you are interested in developing, a feature that you need
                     built or a project that needs coding. I’d love to help with it </p>
 
-                <form class="contact-form" action="https://formspree.io/f/xbjwjrlv" method="POST">
-                    <label id="contact-label-name" for="name">Name</label><input class="name-field" type="text" id="name" name="name"  placeholder="Enter your name"
-                    maxlength="30" required>
-                    <label id="contact-label-email" for="email">Email</label><input class="email-field" type="email" id="email" name="email"  placeholder="example@yahoo.com"
-                        required>
-                    <label  id="contact-label-area"  for ="message">Enter yout text</label><textarea class="area-field" id="message" name="message"  placeholder="Enter text here"
-                        maxlength="50" required></textarea>
-                        <small class="err-msg"></small>
+                <form class="contact-form" action="https://formspree.io/f/xbjwjrlv" method="post">
+                    <label id="contact-label-name" for="name">Name</label><input class="name-field" type="text"
+                        id="name" name="name" placeholder="Enter your name" maxlength="30" required>
+                    <label id="contact-label-email" for="email">Email</label><input class="email-field" type="email"
+                        id="email" name="email" placeholder="example@yahoo.com" required>
+                    <label id="contact-label-area" for="message">Enter yout text</label><textarea class="area-field"
+                        id="message" name="message" placeholder="Enter text here" maxlength="50" required></textarea>
+                    <small class="err-msg"></small>
                     <button class="contact-btn" type="submit">Send</button>
 
                 </form>
             </section>
-        
-        <footer class="end-footer">
+
+            <footer class="end-footer">
                 <hr>
                 <ul class="social-media-list-end">
                     <li> <a class="social-icons"><img src="Icons/social-img.png" alt="github-social-icon"></a></li>
@@ -168,34 +170,45 @@
     </main>
 
     <div class="modal-container">
-    <div class="modal">
-        <div class="modal-item">
-        <h1 class="modal-heading">Multi-post story</h1>
-        <img  class="modal-close" src="Icons/modal-close.png" alt="close">
-   
-       <img class="modal-post" src="Icons/Snapshoot-Portfolio.png" alt="post-story-image">
-       <div class="modal-paragraph">
-       <p class="modal-parainner">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
-       <ul class="modal-languages">
-        <li class="modal-divisor"><img src="Icons/Rectangle.png" alt="divide line1"></li>
-        <li>html</li>
-        <li class="modal-divisor"><img src="Icons/Rectangle.png" alt="divide line2"></li>
-        <li>Ruby on rails</li>
-        <li class="modal-divisor"> <img src="Icons/Rectangle.png" alt="divide line3"></li>
-        <li>css</li>
-        <li class="modal-divisor"><img src="Icons/Rectangle.png" alt="divide line3"></li>
-    </ul>
+        <div class="modal">
+            <div class="modal-item">
+                <h1 class="modal-heading">Multi-post story</h1>
+                <img class="modal-close" src="Icons/modal-close.png" alt="close">
 
-<form class="modal-form">
-<button class="modal-button" type="submit" onclick="window.location.href='https://ifzarasool.github.io/Portfolio-desktop-version/';">See Live<img src="Icons/source-button.png" alt="See-live"></button>
-<button class="modal-button" type="submit" onclick="window.location.href='https://github.com/IfzaRasool/Portfolio-desktop-version';">See Source<img src="Icons/live-button.png" alt="See-Source"></button>
-</form>
-</div>
-</div>
-</div>
-</div>
+                <img class="modal-post" src="Icons/Snapshoot-Portfolio.png" alt="post-story-image">
+                <div class="modal-paragraph">
+                    <p class="modal-parainner">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply
+                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
+                    <ul class="modal-languages">
+                        <li class="modal-divisor"><img src="Icons/Rectangle.png" alt="divide line1"></li>
+                        <li>html</li>
+                        <li class="modal-divisor"><img src="Icons/Rectangle.png" alt="divide line2"></li>
+                        <li>Ruby on rails</li>
+                        <li class="modal-divisor"> <img src="Icons/Rectangle.png" alt="divide line3"></li>
+                        <li>css</li>
+                        <li class="modal-divisor"><img src="Icons/Rectangle.png" alt="divide line3"></li>
+                    </ul>
+
+                    <form class="modal-form">
+                        <button class="modal-button" type="submit"
+                            onclick="window.location.href='https://ifzarasool.github.io/Portfolio-desktop-version/';">See
+                            Live<img src="Icons/source-button.png" alt="See-live"></button>
+                        <button class="modal-button" type="submit"
+                            onclick="window.location.href='https://github.com/IfzaRasool/Portfolio-desktop-version';">See
+                            Source<img src="Icons/live-button.png" alt="See-Source"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
     
+
 
 </body>
 

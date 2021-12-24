@@ -143,6 +143,7 @@ html {
 .header-container {
   display: grid;
   grid-template-rows: 15% 15% 15%;
+  grid-template-columns: 80% 15%;
   align-items: center;
   padding-top: 2rem;
 }
@@ -157,33 +158,13 @@ html {
   padding-left: 2rem;
 }
 
-.menu-arrow1 {
-  position: absolute;
-  align-items: center;
-  top: 5.5rem;
-  left: -4rem;
-  color: #7d73fc;
-}
-
-.menu-arrow2 {
-  position: absolute;
-  align-items: center;
-  top: 10rem;
-  left: -4rem;
-  color: #7d73fc;
-}
-
-.menu-arrow3 {
-  position: absolute;
-  align-items: center;
-  top: 15rem;
-  left: -4rem;
+.menu-arrow {
   color: #7d73fc;
 }
 
 .closeIcon {
   position: absolute;
-  left: -4rem;
+  left: -2rem;
   color: #c8c8d4;
 }
 
@@ -259,7 +240,7 @@ a {
   display: none;
 }
 
-.hamburger {
+.hamburger1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
@@ -1250,5 +1231,9 @@ li {
     color: red;
     padding-top: 12rem;
     margin-left: -7rem;
+  }
+
+  .menu-arrow {
+    display: none;
   }
 }
