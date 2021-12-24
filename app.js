@@ -136,12 +136,12 @@ form.addEventListener('submit', (e) => {
 /* store data */
 const storeName = document.getElementById('name');
 const storeEmail = document.getElementById('email');
-const text = document.getElementById('message');
+const msgTxt = document.getElementById('message');
 
 function storeLocally() {
   const localName = storeName.value;
   const localEmail = storeEmail.value;
-  const localMessage = text.value;
+  const localMessage = msgTxt.value;
 
   localStorage.setItem('name', localName);
   localStorage.setItem('email', localEmail);
@@ -149,9 +149,9 @@ function storeLocally() {
 }
 
 function preFillData() {
-  storeName.value += localStorage.getItem('name');
-  storeEmail.value += localStorage.getItem('email');
-  text.value += localStorage.getItem('message');
+  storeName.value.value += localStorage.getItem('name');
+  storeEmail.value.value += localStorage.getItem('email');
+  msgTxt.value += localStorage.getItem('message');
 }
 
 if (localStorage.getItem('name')) {
@@ -162,6 +162,6 @@ if (localStorage.getItem('name')) {
 
 storeName.onchange = storeLocally;
 storeEmail.onchange = storeLocally;
-text.onchange = storeLocally;
+msgTxt.onchange = storeLocally;
 
 form.addEventListener('submit', storeLocally, preFillData);
