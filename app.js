@@ -3,33 +3,21 @@ const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-const menuArrow1 = document.querySelector('.menu-arrow1');
-const menuArrow2 = document.querySelector('.menu-arrow2');
-const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
 const portfolioJs = document.querySelector('.main-post-container');
 const deskportfolioJs = document.querySelector('.desk-main-post-container');
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
-menuArrow1.style.display = 'none';
-menuArrow2.style.display = 'none';
-menuArrow3.style.display = 'none';
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
-    menuArrow1.style.display = 'none';
-    menuArrow2.style.display = 'none';
-    menuArrow3.style.display = 'none';
     menuIcon.style.display = 'block';
   } else {
     menu.classList.add('showMenu');
     closeIcon.style.display = 'block';
-    menuArrow1.style.display = 'block';
-    menuArrow2.style.display = 'block';
-    menuArrow3.style.display = 'block';
     menuIcon.style.display = 'none';
   }
 }
