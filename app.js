@@ -3,33 +3,21 @@ const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-const menuArrow1 = document.querySelector('.menu-arrow1');
-const menuArrow2 = document.querySelector('.menu-arrow2');
-const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
 const portfolioJs = document.querySelector('.main-post-container');
 const deskportfolioJs = document.querySelector('.desk-main-post-container');
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
-menuArrow1.style.display = 'none';
-menuArrow2.style.display = 'none';
-menuArrow3.style.display = 'none';
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
-    menuArrow1.style.display = 'none';
-    menuArrow2.style.display = 'none';
-    menuArrow3.style.display = 'none';
     menuIcon.style.display = 'block';
   } else {
     menu.classList.add('showMenu');
     closeIcon.style.display = 'block';
-    menuArrow1.style.display = 'block';
-    menuArrow2.style.display = 'block';
-    menuArrow3.style.display = 'block';
     menuIcon.style.display = 'none';
   }
 }
@@ -37,6 +25,8 @@ hamburger.addEventListener('click', toggleMenu);
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
 });
+
+/* POP Window */
 
 const workObject = [{
   Title: 'Multi-Post Stories',
@@ -68,6 +58,7 @@ for (let i = 0; i <= 4; i += 1) {
 `;
   }
 }
+
 for (let i = 0; i <= 2; i += 1) {
   for (let j = 0; j < workObject.length; j += 1) {
     const allWork = workObject[j];
@@ -129,3 +120,15 @@ function closeModal() {
   appWrapper.style.display = 'inherit';
 }
 modalClose.addEventListener('click', closeModal);
+
+/* form Validation */
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const errMsg = document.querySelector('.err-msg');
+
+form.addEventListener('submit', (e) => {
+  if (email.value === email.value.toLowerCase()) {
+    errMsg.innerHTML = '';
+  } else { e.preventDefault(); }
+  errMsg.innerHTML = '* Please enter a correct email in lowercase';
+});
