@@ -135,10 +135,11 @@ modalClose.addEventListener('click', closeModal);
 /* form Validation */
 const form = document.querySelector('.contact-form');
 const email = document.getElementById('email');
+const errMsg = document.querySelector('.err-msg');
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     errMsg.innerHTML = '';
   } else { e.preventDefault(); }
- 
+  errMsg.innerHTML = '* Please enter a correct email in lowercase';
 });
