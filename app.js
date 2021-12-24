@@ -133,15 +133,13 @@ function closeModal() {
 modalClose.addEventListener('click', closeModal);
 
 /* form Validation */
+const form = document.querySelector('.contact-form');
 const email = document.getElementById('email');
 const errMsg = document.querySelector('.err-msg');
-const contactButton = document.querySelector('.contact-btn');
 
-function validate() {
+form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     errMsg.innerHTML = '';
-  } else {
-    errMsg.innerHTML = '*Email must be in lowercase letters';
-  }
-}
-contactButton.addEventListener('click', validate);
+  } else { e.preventDefault(); }
+  errMsg.innerHTML = '*Email must be in lowercase letters';
+});
