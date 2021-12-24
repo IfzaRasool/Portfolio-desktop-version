@@ -70,6 +70,7 @@ for (let i = 0; i <= 4; i += 1) {
 `;
   }
 }
+
 for (let i = 0; i <= 2; i += 1) {
   for (let j = 0; j < workObject.length; j += 1) {
     const allWork = workObject[j];
@@ -135,10 +136,11 @@ modalClose.addEventListener('click', closeModal);
 /* form Validation */
 const form = document.querySelector('.contact-form');
 const email = document.getElementById('email');
+const errMsg = document.querySelector('.err-msg');
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     errMsg.innerHTML = '';
   } else { e.preventDefault(); }
- 
+  errMsg.innerHTML = '*Email must be in lowercase letters';
 });
