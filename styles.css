@@ -98,8 +98,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 22px;
-  width: 101px;
+  padding: 8px;
+  width: 115px;
   height: 57px;
   margin: 0.5rem;
   background: rgb(71, 65, 238);
@@ -109,6 +109,7 @@ html {
 .modal-close {
   display: flex;
   justify-content: space-between;
+  margin-right: 2rem;
   width: 1rem;
   height: 1rem;
 }
@@ -118,7 +119,19 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left: 1rem;
+}
+
+.modal-button:hover {
+  background-color: #c8c8d4;
+  color: #191765;
+}
+
+.modal-button:active {
+  background-color: darkseagreen;
+}
+
+.modal-button:visited {
+  background-color: darkturquoise;
 }
 
 .header-container {
@@ -1204,8 +1217,8 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 22px;
-    width: 101px;
+    padding: 5px;
+    width: 120px;
     height: 57px;
     margin: 0.5rem;
     background: rgb(71, 65, 238);
@@ -1225,6 +1238,5 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 2rem;
   }
 }
