@@ -3,33 +3,21 @@ const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-const menuArrow1 = document.querySelector('.menu-arrow1');
-const menuArrow2 = document.querySelector('.menu-arrow2');
-const menuArrow3 = document.querySelector('.menu-arrow3');
 const modalContainer = document.querySelector('.modal');
 const portfolioJs = document.querySelector('.main-post-container');
 const deskportfolioJs = document.querySelector('.desk-main-post-container');
 
 modalContainer.style.display = 'none';
 closeIcon.style.display = 'none';
-menuArrow1.style.display = 'none';
-menuArrow2.style.display = 'none';
-menuArrow3.style.display = 'none';
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
-    menuArrow1.style.display = 'none';
-    menuArrow2.style.display = 'none';
-    menuArrow3.style.display = 'none';
     menuIcon.style.display = 'block';
   } else {
     menu.classList.add('showMenu');
     closeIcon.style.display = 'block';
-    menuArrow1.style.display = 'block';
-    menuArrow2.style.display = 'block';
-    menuArrow3.style.display = 'block';
     menuIcon.style.display = 'none';
   }
 }
@@ -145,14 +133,14 @@ form.addEventListener('submit', (e) => {
 });
 // Creating local storage
 
-const storeName = document.getElementById('name');
-const storeEmail = document.getElementById('email');
-const messageText = document.getElementById('message');
+const inname = document.getElementById('name');
+const inemail = document.getElementById('email');
+const text = document.getElementById('message');
 
 function storeLocally() {
-  const localName = storeName.value;
-  const localEmail = storeEmail.value;
-  const localMessage = messageText.value;
+  const localName = inname.value;
+  const localEmail = inemail.value;
+  const localMessage = text.value;
 
   localStorage.setItem('name', localName);
   localStorage.setItem('email', localEmail);
@@ -160,9 +148,9 @@ function storeLocally() {
 }
 
 function preFillData() {
-  storeName.value.value += localStorage.getItem('name');
-  storeEmail.value.value += localStorage.getItem('email');
-  messageText.value += localStorage.getItem('message');
+  inname.value += localStorage.getItem('name');
+  inemail.value += localStorage.getItem('email');
+  text.value += localStorage.getItem('message');
 }
 
 if (localStorage.getItem('name')) {
@@ -171,8 +159,8 @@ if (localStorage.getItem('name')) {
   storeLocally();
 }
 
-storeName.onchange = storeLocally;
-storeEmail.onchange = storeLocally;
-messageText.onchange = storeLocally;
+inname.onchange = storeLocally;
+inemail.onchange = storeLocally;
+text.onchange = storeLocally;
 
 form.addEventListener('submit', storeLocally, preFillData);
